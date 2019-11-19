@@ -1,0 +1,205 @@
+(a) Newton's method:
+>> newtonRoot
+	ans =
+	    'Approximate root is 2.8000000000   '
+	ans =
+	    'Approximate root is 1.9357142857   '
+	ans =
+	    'Approximate root is 1.7427648919   '
+	ans =
+	    'Approximate root is 1.7320837413   '
+	ans =
+	    'Approximate root is 1.7320508079   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root of  x^2 - 2.0 is 1.7320508076    
+	     '
+	ans =
+	    'Error in    root of  x^2 - 2.0 is 2.2204460493e-16 
+	     '
+
+	Modified Newton's method:
+
+	############################## CODE ######################################
+	fstring = 'x^2 - 3';      % target function 
+	dfstring = '2.0*x';       % target functions derivative
+
+	x0  = 5.0;               % initial guess
+	eps = 1.0e-12;             % stopping tolerance
+	format long;              % print out in long format
+	format compact;           % suppress line feeds
+
+	xn  = x0;
+
+	eval(['x = xn;',fstring,';']);     % evaluate f  at xn
+	fn = ans; 
+	dfn = 10.0;                         % evaluate f' at x0
+
+	while(abs(fn) > eps)      
+	   xn  = xn - fn/dfn;      % Newton iteration
+	   
+	   sprintf(['Approximate root is %-15.10f'],xn) 
+	   
+	   eval(['x = xn;',fstring,';']);     % evaluate the f  at xn
+	   fn = ans; 
+	end
+
+	%
+	% Print out final results
+	%
+	rootErr = abs(xn - sqrt(3.0));
+	sprintf(['Approximate root of  x^2 - 2.0 is %-15.10f \n'],xn) 
+
+	sprintf(['Error in    root of  x^2 - 2.0 is %-15.10e \n'],rootErr) 
+	##########################################################################
+
+	>> newtonRoot
+	ans =
+	    'Approximate root is 2.8000000000   '
+	ans =
+	    'Approximate root is 2.3160000000   '
+	ans =
+	    'Approximate root is 2.0796144000   '
+	ans =
+	    'Approximate root is 1.9471347947   '
+	ans =
+	    'Approximate root is 1.8680014038   '
+	ans =
+	    'Approximate root is 1.8190584794   '
+	ans =
+	    'Approximate root is 1.7881611042   '
+	ans =
+	    'Approximate root is 1.7684090908   '
+	ans =
+	    'Approximate root is 1.7556820195   '
+	ans =
+	    'Approximate root is 1.7474400842   '
+	ans =
+	    'Approximate root is 1.7420853994   '
+	ans =
+	    'Approximate root is 1.7385992455   '
+	ans =
+	    'Approximate root is 1.7363265119   '
+	ans =
+	    'Approximate root is 1.7348435363   '
+	ans =
+	    'Approximate root is 1.7338753267   '
+	ans =
+	    'Approximate root is 1.7332429619   '
+	ans =
+	    'Approximate root is 1.7328298454   '
+	ans =
+	    'Approximate root is 1.7325599181   '
+	ans =
+	    'Approximate root is 1.7323835311   '
+	ans =
+	    'Approximate root is 1.7322682612   '
+	ans =
+	    'Approximate root is 1.7321929283   '
+	ans =
+	    'Approximate root is 1.7321436942   '
+	ans =
+	    'Approximate root is 1.7321115165   '
+	ans =
+	    'Approximate root is 1.7320904859   '
+	ans =
+	    'Approximate root is 1.7320767408   '
+	ans =
+	    'Approximate root is 1.7320677572   '
+	ans =
+	    'Approximate root is 1.7320618856   '
+	ans =
+	    'Approximate root is 1.7320580481   '
+	ans =
+	    'Approximate root is 1.7320555399   '
+	ans =
+	    'Approximate root is 1.7320539006   '
+	ans =
+	    'Approximate root is 1.7320528291   '
+	ans =
+	    'Approximate root is 1.7320521288   '
+	ans =
+	    'Approximate root is 1.7320516711   '
+	ans =
+	    'Approximate root is 1.7320513720   '
+	ans =
+	    'Approximate root is 1.7320511765   '
+	ans =
+	    'Approximate root is 1.7320510487   '
+	ans =
+	    'Approximate root is 1.7320509652   '
+	ans =
+	    'Approximate root is 1.7320509106   '
+	ans =
+	    'Approximate root is 1.7320508749   '
+	ans =
+	    'Approximate root is 1.7320508516   '
+	ans =
+	    'Approximate root is 1.7320508363   '
+	ans =
+	    'Approximate root is 1.7320508264   '
+	ans =
+	    'Approximate root is 1.7320508199   '
+	ans =
+	    'Approximate root is 1.7320508156   '
+	ans =
+	    'Approximate root is 1.7320508128   '
+	ans =
+	    'Approximate root is 1.7320508110   '
+	ans =
+	    'Approximate root is 1.7320508098   '
+	ans =
+	    'Approximate root is 1.7320508090   '
+	ans =
+	    'Approximate root is 1.7320508085   '
+	ans =
+	    'Approximate root is 1.7320508082   '
+	ans =
+	    'Approximate root is 1.7320508080   '
+	ans =
+	    'Approximate root is 1.7320508078   '
+	ans =
+	    'Approximate root is 1.7320508077   '
+	ans =
+	    'Approximate root is 1.7320508077   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root is 1.7320508076   '
+	ans =
+	    'Approximate root of  x^2 - 2.0 is 1.7320508076    
+	     '
+	ans =
+	    'Error in    root of  x^2 - 2.0 is 1.9384494010e-13 
+	     '
+
+(b) Order of convergence
+	Newton's method: 2
+	Modified Newton's method: 1

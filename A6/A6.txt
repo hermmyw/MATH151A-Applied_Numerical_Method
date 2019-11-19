@@ -1,0 +1,18 @@
+[C2]
+n = 5: 1.0752000000e-01
+n = 10: 1.7763568394e-14
+n = 20: 1.2272072247e-11 
+
+[C3]
+The error should be very close to 0 as the plots show that the interpolants and the actual function almost overlap when n=10 and n=20
+The computed errors for n=10 and n=20 are very small, which correlates to the observation.
+
+[C4]
+n = 10: 9.4480590018e-10
+n = 20: 5.0520698736e-12 
+n = 30: 8.0619727560e-09
+
+[C5]
+n = 10: 3.6102754823e-01
+n = 20: 3.7868405176e-02
+n = 30: 4.1147801736e+05

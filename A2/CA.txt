@@ -1,0 +1,20 @@
+C2.	(a) Bisect takes 18 iterations. Reguli-Falsi method takes 4 iterations. 
+	(b) The residual for the Bisect method is 7.6293945295e-07. The residual for
+	 the Reguli-Falsi method is 2.3757196210e-10.
+
+
+C3.	Initial bound [1.0, 1.2]
+	(a) Bisect takes 17 iterations. Reguli-Falsi method takes 7 iterations. 
+	(b) The residual for the Bisect method is 4.8873530132e-06. The residual for
+	 the Reguli-Falsi method is 3.3439299041e-07.
+	(c) The Reguli-Falsi method is better than Bisection in this case.
+
+	Initial bound [1.0, 2.0]
+	(a) Bisect takes 19 iterations. Reguli-Falsi method takes 91 iterations. 
+	(b) The residual for the Bisect method is 4.9236944029e-06. The residual for
+	 the Reguli-Falsi method is 8.7764181766e-07
+	(c) The Reguli-Falsi method is not always better than Bisection. The 
+	Reguli-Falsi is optimal when the initial interval is relatively small. As 
+	the interval gets wider, the more iterations it needs to take. The number 
+	of iterations for bisection method is relatively stable as the range of the 
+	initial interval gets wider.

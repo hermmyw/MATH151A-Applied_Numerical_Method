@@ -1,0 +1,9 @@
+Assignment 7
+============
+The order of convergence is 2 (quadratic). 
+This is because in the list p that calculates log(error_i/error_i+1), 
+we get a list of 2's.
+
+When h is very small, we run into the issue of subtraction. In the forward 
+difference calculation, x_0 and h are very close values. We have the risk 
+of catastrophic cancellation. The result may be inaccurate.
