@@ -54,5 +54,5 @@ fs   % display the results
 
 p = zeros(1,N-1);
 for(i = 1:N-1)
-    p(i) = log(diffError(i)/diffError(i+1));
+    p(i) = log(diffError(i)/diffError(i+1))/log(2);
 end
