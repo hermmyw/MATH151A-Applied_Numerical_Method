@@ -65,10 +65,10 @@ for i = 2:n+1
 end
 A(1,1) = 1;
 
-qRHS(1) = cos(0);
+% qRHS(1) = cos(0);
 % qRHS(1) = 0;
 % qRHS(1) = (sin(x_(2))-sin(x_(1)))/h;
-% qRHS(1) = (-sin(x_(3))+4*sin(x_(2))-3*sin(x_(1)))/(2*h);
+qRHS(1) = (-sin(x_(3))+4*sin(x_(2))-3*sin(x_(1)))/(2*h);
 
 for i = 2:n+1
     qRHS(i) = 2/h*(f(i)-f(i-1));

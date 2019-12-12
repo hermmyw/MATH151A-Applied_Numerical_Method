@@ -113,4 +113,4 @@ spline? Explain.
 I would use (iii) which has a convergence order of 3. Also, since computing 
 the first order one-sided difference results in similar convergence order 
 and error as the two-sided difference, choosing one-sided requires less 
-computation. 
+computation. (iii) does not need to compute the derivative.
